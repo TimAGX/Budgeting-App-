@@ -14,32 +14,43 @@
     </section>
 
     <section class="hero">
-        <div class="budget">Budget: $10000</div>
-        <div class="expenses">Expenses:$4500</div>
-        <div class="Balance">Balance:$6500</div>
+        <div class="budgetnumber">
+            <p>budget:</p>
+        </div>
+        <div class="expensesnumber">
+            <p>expense:</p>
+        </div>
+        <div class="balancenumber">
+            <p>balance:</p>
+        </div>
     </section>
 
     <section>
         <div class="container">
-            <div class="budgetdiv">
+            <div class="budget">
                 <p>Please enter your budget</p>
                 <input type="text" class="budget-input">
-                <button class="normal">Calculate</button>
+                <button onclick="calculate()" id="budgetBtn" class="normal">Calculate</button>
             </div>
-            <div class="expensediv">
+            <div class="expensetitle">
                 <p>Please enter your Expense</p>
-                <input type="text" class="budget-input">
+                <input type="text" id="expense-text" class="expense-input" >
                 
                 <p>Please enter your Expense Amount</p>
-                <input type="text" class="budget-input">
-                <button class="normal">Add Expense</button>
+                <input type="text" id="expense-amount" class="amount-input" >
+                <button onclick="addExpense()" class="normal">Add Expense</button>
             </div>
         </div>
         
     </section>
 
+
+
     <section id="cart">
-        <table class="tablee" width="100%">
+        <div class="expenses">
+            
+        </div>
+        <!-- <table class="tablee">
             <thead>
                 <tr>
                     <td>Expense Title</td>
@@ -47,12 +58,13 @@
                     <td>Remove Value</td>
                 </tr>
             </thead>
-            <tbody class="tbody">
+            <tbody class="expenses">
+                
                 <td>Buy Cookies</td>
                 <td>$10</td>
                 <td><i class="fa-solid fa-trash"></i></td>
             </tbody>
-        </table>
+        </table> -->
     </section>
     
 

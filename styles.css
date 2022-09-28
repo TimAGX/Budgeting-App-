@@ -27,15 +27,17 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    flex-wrap: wrap;
+    padding: 40px 30px;
 }
+
 .container{
     display: flex;
     flex-wrap: wrap;
     padding: 50px 80px;
 
 }
-.budgetdiv{
+.budget{
     flex: 1;
     border: solid 2px #05386B;
     padding: 20px;
@@ -49,6 +51,22 @@ p{
     outline: none;
     margin: 10px 0;
 }
+.expense-input{
+    height: 40px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    margin: 10px 0; 
+}
+.amount-input{
+  height: 40px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  margin: 10px 0;
+}
 .normal{
     font-size: 20px;
     font-weight: 600;
@@ -58,7 +76,7 @@ p{
     color: #edf5e1;   
     width: 100%;
 }
-.expensediv{
+.expensetitle{
     flex: 1;
     border: solid 2px #05386B;
     padding: 20px;
