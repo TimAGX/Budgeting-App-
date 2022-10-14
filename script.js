@@ -13,12 +13,16 @@ function calculate(){
     }, 0);
     budgetNumber.innerHTML = `budget: $ ` + budget.value;
     expensesNumber.innerHTML = `expenses: $ ` + total;
-    const diff = budget.value - total;
-    balanceNumber.innerHTML = `balance: $ ` + diff;
+    const difference = budget.value - total;
+    balanceNumber.innerHTML = `balance: $ ` + difference;
 }
 function deleteItem(item) {
     expenses = expenses.filter((exp) => exp.id !== item);
     displayExpenses()
+    calculate() 
+}
+function addItem(){
+    
 }
 
 function displayExpenses() {
